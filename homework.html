@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="eh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="jquery.bxslider.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+
+
+
+    <style>
+        .container-fluid {
+            background-color: #000000;
+        }
+        
+        .container-fluid .navbar-header .navbar-brand img {
+            height: 100%;
+        }
+        
+        .jumbotron {
+            color: aliceblue;
+            text-align: center;
+            background-image: url(images/b.jpg);
+            background-size: cover;
+            height: 800px;
+            padding-top: 300px;
+        }
+        
+        .thumbnail h3 {
+            text-align: center;
+        }
+        
+        .thumbnail {
+            opacity: .8;
+        }
+        
+        .row h1,
+        .row p {
+            text-align: center;
+        }
+        
+        .icon {
+            text-align: center;
+        }
+        
+        .works h1,
+        .slider p {
+            text-align: center;
+        }
+        
+        .slider img {
+            width: 100%;
+        }
+    </style>
+
+
+    
+    <script src="jquery.bxslider.min.js"></script>
+    <script src="lightbox.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".slider ul").bxSlider({
+                mode: "fade",
+                speed: 2000,
+                captions: true,
+                //                pager:false,
+                pagerType: "short",
+                //                controls:false,
+                auto: true,
+                pause: 2000
+
+
+            });
+
+        });
+    </script>
+    <script>
+        lightbox.option({
+            "fadeDuration": 100,
+            "imageFadeDuration": 100,
+            "positionFromTop": 400,
+        })
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/logo48x48.png" alt=""></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">works</a></li>
+                    <li><a href="#">service</a></li>
+                    <li><a href="#">contact</a></li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header class="fixed-width">
+        <div class="jumbotron">
+            <h1>DESIGN</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quod, autem pariatur at facilis nam veniam vitae, iure quisquam harum deserunt dicta, sunt rerum, consequuntur sed obcaecati alias repellat placeat!</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">start</a></p>
+        </div>
+    </header>
+
+    <div class="row">
+        <h1>ABOUT US</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae explicabo ipsam sequi at, dolores autem modi, culpa numquam recusandae hic quos fuga animi, ullam molestias doloribus sapiente odit nostrum! Ea!</p>
+        <div class="col-sm-4 col-md-4">
+            <div class="thumbnail">
+                <div class="icon"><span class="fa fa-gavel fa fa-4x"></span></div>
+
+                <div class="caption">
+                    <h3>QWERTY</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero aut quia explicabo raesentium alias adipisci cupiditate, doloremque sint, voluptatibus possimus voluptates nam corporis quae ipsam sed a, assumenda dolorum provident.</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-sm-4 col-md-4">
+            <div class="thumbnail">
+                <div class="icon"><span class="fa fa-bolt fa-4x"></span></div>
+
+                <div class="caption">
+                    <h3>QWERTY</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero aut quia explicabo praesentium alias adipisci cupiditate, doloremque sint, voluptatibus possimus voluptates nam corporis quae ipsam sed a, assumenda dolorum provident.</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-4">
+            <div class="thumbnail">
+                <div class="icon"><span class="fa fa-camera-retro fa-4x"></span></div>
+
+                <div class="caption">
+                    <h3>QWERTY</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero aut quia explicabo praesentium alias adipisci cupiditate, doloremque sint, voluptatibus possimus voluptates nam corporis quae ipsam sed a, assumenda dolorum provident.</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="works">
+        <h1>works</h1>
+        <p>Lorem132 ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis nostrum dignissimos consaequatur beatae architecto veniam suscipit placeat, similique pariatur. Amet voluasdpasdtatum aeum deletus, architecto suscipit quasi vel molestiaas modi accusantium.</p>
+        <div class="slider">
+            <ul>
+                <li>
+                    <div class="box">
+                        <a href="images/001.jpg" data-lightbox="lb" data-title="TEST">
+                            <img src="images/001.jpg" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a href="images/002.jpg" data-lightbox="lb">
+                            <img src="images/002.jpg" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a href="images/003.jpg" data-lightbox="lb">
+                            <img src="images/003.jpg" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a href="images/004.jpg" data-lightbox="lb">
+                            <img src="images/004.jpg" alt="">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
